@@ -21,9 +21,10 @@ function App() {
             </div>
             <div class="form-label">
               <h2>Fun Fact</h2>
+              
               <textarea placeholder="Fun Fact"></textarea>
             </div>
-
+            <button class="submit-button">Submit</button>
           </div>
         </div>
         <div class="half">

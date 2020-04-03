@@ -30,19 +30,18 @@
 /* 'Custom' CSS */
 
 h1 {
-  font-size: 26px;
+  font-size: 24px;
 }
 h2 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
-
 .title {
-  margin: 8% auto;
+  margin: 6% auto;
 }
 
 .form-label {
-  margin: auto 14%;
+  margin: 4% 12% 2% 12%;
   text-align: left;
 }
 
@@ -67,6 +66,19 @@ textarea {
   padding: 10px 10px 10px 10px;
   font-family: inherit;
   font-size: inherit;
+}
+
+.submit-button {
+  border-radius: 20px;
+  border-style: solid;
+  width: 6rem;
+  height: 2.5rem;
+  float: right;
+  margin: 4% 16%;
+  background-color: #ff7b5c;
+  font-family: inherit;
+  font-size: inherit;
+  color: #eeeeee;
 }
 
 .half {

@@ -30,26 +30,26 @@
 /* 'Custom' CSS */
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .title {
-  margin: 6% auto;
+  margin: 5% auto 0% auto;
 }
 
 .form-label {
-  margin: 4% 12% 2% 12%;
+  margin: 2% 12% 2% 12%;
   text-align: left;
 }
 
 input[type="text"] {
   text-align: left;
   display: inline-block;
-  width: 240px;
-  height: 16px;
+  width: 20rem;
+  height: 1rem;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
@@ -59,8 +59,8 @@ input[type="text"] {
 textarea {
   text-align: left;
   display: inline-block;
-  width: 240px;
-  height: 80px;
+  width: 20rem;
+  height: 5rem;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
@@ -72,7 +72,7 @@ textarea {
   border-radius: 20px;
   border-style: solid;
   width: 6rem;
-  height: 2.5rem;
+  height: 2.6rem;
   float: right;
   margin: 4% 16%;
   background-color: #ff7b5c;
@@ -83,7 +83,7 @@ textarea {
 
 .half {
   margin: 10% 5%;
-  width: 30%;
+  width: 25%;
   height: 100%;
   display: inline-block;
   vertical-align: middle;

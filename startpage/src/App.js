@@ -3,31 +3,40 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  // const txtFieldState = {
+  //   value: "",
+  //   valid: true,
+  //   errMsg: "" //this is where our error message gets across
+  // };
+  
+
+
+  // document.addEventListener('submit-button', submit);
   return (
     <div className="App">
       <header className="App-header">
-        <div class="half">
-          <div class="login-box">
-            <div class="title">
+        <div className="half">
+          <div className="login-box">
+            <div className="title">
               <h1>Hack UCI Application</h1>
             </div>
-            <div class="form-label">
+            <div className="form-label">
               <h2>Name</h2>
               <input type="text" placeholder="Name"></input>
             </div>
-            <div class="form-label">
+            <div className="form-label">
               <h2>Email</h2>
               <input type="text" placeholder="Email"></input>
             </div>
-            <div class="form-label">
+            <div className="form-label">
               <h2>Fun Fact</h2>
               
               <textarea placeholder="Fun Fact"></textarea>
             </div>
-            <button class="submit-button">Submit</button>
+            <button className="submit-button">Submit</button>
           </div>
         </div>
-        <div class="half">
+        <div className="half">
           <img src="petr.png" className="App-logo" alt="logo" />
         </div>
       </header>

@@ -19,9 +19,9 @@ function App() {
               <h2>Email</h2>
               <input type="text" placeholder="Email"></input>
             </div>
-            <div class="name">
-              <h2>Name</h2>
-              <input type="text" placeholder="Name"></input>
+            <div class="form-label">
+              <h2>Fun Fact</h2>
+              <textarea placeholder="Fun Fact"></textarea>
             </div>
 
           </div>

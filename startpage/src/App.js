@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class App extends Component {
   state = {
@@ -12,23 +14,26 @@ class App extends Component {
     factError: ""
   }
 
+  // toast
+  notify = () => toast.success("Success");
+
   // handle text box editing
   editName = (e) => {
     this.setState({name: e.target.value});
     this.setState({nameError: ""});
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   editEmail = (e) => {
     this.setState({email: e.target.value});
     this.setState({emailError: ""});
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   editFact = (e) => {
     this.setState({fact: e.target.value});
     this.setState({factError: ""});
-    console.log(e.target.value);
+    // console.log(e.target.value);
   }
 
   submit = (e) => {
@@ -42,10 +47,19 @@ class App extends Component {
         .then(response => response.json())
         .then((data) => {
           console.log('Success:', data);
+          this.setState({
+            name: "",
+            email: "",
+            fact: "",
+            nameError: "",
+            emailError: "",
+            factError: ""
+          });
+          this.notify();
         }
       )
     }
-    
+
   }
 
   // boolean to check if all of the contents of the box are filled out 
@@ -54,7 +68,7 @@ class App extends Component {
   isCorrectFormat = () => {
     // check name
     if (this.state.name.length === 0) {
-      this.setState({nameError: "Please enter a name"});
+      this.setState({nameError: "Please enter your name"});
       return false;
     }
     // check emails
@@ -63,20 +77,20 @@ class App extends Component {
       return false;
     }
     else if (this.state.email.length < 7) {
-      this.setState({emailError: "Email is too short"});
+      this.setState({emailError: "Please enter a valid email"});
       return false;
     }
     else if (this.state.email.slice(-4) !== ".com") {
-      this.setState({emailError: "Email must be at a valid website"});
+      this.setState({emailError: "Please enter a valid email"});
       return false;
     }
     else if (!this.state.email.includes("@")) {
-      this.setState({emailError: "Not an email"});
+      this.setState({emailError: "Please enter a valid email"});
       return false;
     }
     // check fact
     if (this.state.fact.length === 0) {
-      this.setState({factError: "Please enter a fact"});
+      this.setState({factError: "Please enter a fact about yourself"});
       return false;
     }
 
@@ -109,6 +123,7 @@ class App extends Component {
             </div>
             <button className="submit-button" onClick={this.submit}>Submit</button>
           </div>
+          <ToastContainer />
         </div>
         <div className="half">
           <img src="petr.png" className="App-logo" alt="logo" />

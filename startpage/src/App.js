@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends Component {
   // const txtFieldState = {
   //   value: "",
   //   valid: true,
@@ -12,7 +12,8 @@ function App() {
 
 
   // document.addEventListener('submit-button', submit);
-  return (
+  render() {
+    return (
     <div className="App">
       <header className="App-header">
         <div className="half">
@@ -41,7 +42,8 @@ function App() {
         </div>
       </header>
     </div>
-  );
+    );
+  }
 }
 
 export default App;

@@ -1,5 +1,9 @@
+
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .App-logo {
@@ -14,8 +18,11 @@
 }
 
 .App-header {
-  background-image: linear-gradient(to right, #ff7b5c, #ff6c81);
-  min-height: 100vh;
+  background-position: 0px 0px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /* min-height: 100vh; */
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
@@ -29,27 +36,41 @@
 
 /* 'Custom' CSS */
 
-h1 {
+/* h1 {
   font-size: 22px;
-}
-h2 {
+} */
+/* h2 {
   font-size: 18px;
-}
+} */
 
 .title {
   margin: 5% auto 0% auto;
 }
 
 .form-label {
-  margin: 2% 12% 2% 12%;
+  margin: 2% auto 3% 8%;
   text-align: left;
+
 }
 
+.title h1{
+  margin: 0% 0% 2% 0%;
+  font-size: 130%;
+}
+
+.form-label h2{
+  margin: 0% 0% 2% 0%;
+  font-size: 100%;
+}
+
+
+
 input[type="text"] {
+  max-width: 100%;
   text-align: left;
   display: inline-block;
-  width: 20rem;
-  height: 1rem;
+  width: 85%;
+  height: 1em;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
@@ -57,10 +78,12 @@ input[type="text"] {
   font-size: inherit;
 }
 textarea {
+  
+  max-width: 100%;
   text-align: left;
   display: inline-block;
-  width: 20rem;
-  height: 5rem;
+  width: 85%;
+  height: 5em;
   border: 1px solid #333;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
@@ -71,10 +94,11 @@ textarea {
 .submit-button {
   border-radius: 20px;
   border-style: solid;
-  width: 6rem;
-  height: 2.6rem;
+  width: 25%;
+  min-width: 6em;
+  height: 2.6em;
   float: right;
-  margin: 4% 16%;
+  margin: 4% 12% 8% 12%;
   background-color: #ff7b5c;
   font-family: inherit;
   font-size: inherit;
@@ -91,7 +115,7 @@ textarea {
 
 .login-box {
   width: 100%;
-  height: 500px;
+  height: 100%;
   margin: 8% auto;
   background: #eeeeee;
   color: #333;
@@ -107,5 +131,39 @@ textarea {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .half {
+    margin: 10% auto;
+    width: 100%;
+    height: 50%;
+    display: block;
+  }
+
+  .login-box {
+    width: 70%;
+    height: 90%;
+    margin: 8% auto;
+    background: #eeeeee;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .submit-button {
+    border-radius: 20px;
+    border-style: solid;
+    width: 15%;
+    height: 2.6em;
+    float: right;
+    margin: 0% 12% 4% 12%;
+    background-color: #ff7b5c;
+    font-family: inherit;
+    font-size: inherit;
+    color: #eeeeee;
   }
 }

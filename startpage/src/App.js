@@ -12,6 +12,7 @@ class App extends Component {
     factError: ""
   }
 
+  // handle text box editing
   editName = (e) => {
     this.setState({name: e.target.value});
     this.setState({nameError: ""});
@@ -31,12 +32,26 @@ class App extends Component {
   }
 
   submit = (e) => {
-    if (this.isProblem()) {
 
+    // API call only occurs if all of the fields are appropriate
+    if (this.isCorrectFormat() == true) {
+      fetch('https://hack-uci-test-endpoint.herokuapp.com/test?' + 
+        'name=' + this.state.name + '&' + 
+        'email=' + this.state.email + '&' +
+        'funfact=' + this.state.fact)
+        .then(response => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        }
+      )
     }
+    
   }
 
-  isProblem = () => {
+  // boolean to check if all of the contents of the box are filled out 
+  // and filled out correctly
+
+  isCorrectFormat = () => {
     // check name
     if (this.state.name.length === 0) {
       this.setState({nameError: "Please enter a name"});

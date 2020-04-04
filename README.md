@@ -15,5 +15,5 @@ Open http://localhost:3000/ to view it in the browser.\
 - [ReactToastify](https://www.npmjs.com/package/react-toastify)
 
 ## Walkthrough
-<img src='./demo/horizontal-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
-<img src='./demo/vertical-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
+<img src='public/demo/horizontal-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
+<img src='public/demo/vertical-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>

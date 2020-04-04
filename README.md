@@ -15,5 +15,8 @@ Open http://localhost:3000/ to view it in the browser.\
 - [ReactToastify](https://www.npmjs.com/package/react-toastify)
 
 ## Walkthrough
-<img src='public/demo/horizontal-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
-<img src='public/demo/vertical-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
+<img src='startpage/public/demo/horizontal-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
+<img src='startpage/public/demo/vertical-startpage.png' title='Home Screen' width='' alt='Home Screen' height="400"/>
+
+## Prompt
+- [Prompt](https://www.notion.so/HackUCI-Tech-Team-Deliverable-e31d10cc364e4357b6bb9a581e4244c2)

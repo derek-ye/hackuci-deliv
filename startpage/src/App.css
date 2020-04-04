@@ -65,7 +65,7 @@
 .form-label h3{
   margin: 0% 0% 2% 0%;
   font-size: 70%;
-  font-weight: 500;
+  font-weight: 5  00;
   color: red;
 }
 
@@ -141,6 +141,14 @@ textarea {
 
 
 @media screen and (max-width: 1200px) {
+
+  html {
+    background: -webkit-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+    background: -moz-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+    background: -ms-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+    background: -o-linear-gradient(#ff7b5c, #ff6c81) no-repeat; 
+    background: linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+  }
 
   .half {
     margin: 10% auto;

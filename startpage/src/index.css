@@ -32,6 +32,10 @@ code {
 
 
 @media screen and (max-width: 600px) {
-  
+  background: -webkit-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+  background: -moz-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+  background: -ms-linear-gradient(#ff7b5c, #ff6c81) no-repeat;
+  background: -o-linear-gradient(#ff7b5c, #ff6c81) no-repeat; 
+  background: linear-gradient(#ff7b5c, #ff6c81) no-repeat;
 
 }
